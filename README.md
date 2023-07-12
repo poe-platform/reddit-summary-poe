@@ -1,3 +1,3 @@
 # Reddit Summary Bot
 
-Available for use at: https://poe.com/RedditSummary
+Summarizes top posts in a SubReddit. Available for use at: https://poe.com/RedditSummary
