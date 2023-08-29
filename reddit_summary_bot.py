@@ -50,7 +50,7 @@ class RedditSummaryBot(PoeBot):
         query_content = PROMPT_TEMPLATE + "".join(post_tags)
         query.query[-1].content = query_content
         yield self.text_event(f"\n\n**Summary of Subreddit {subreddit}**:\n")
-        async for msg in stream_request(query, "Claude-instant", query.api_key):
+        async for msg in stream_request(query, "Claude-instant", query.access_key):
             if isinstance(msg, MetaMessage):
                 continue
             elif msg.is_suggested_reply:

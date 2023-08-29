@@ -16,6 +16,5 @@ def fastapi_app():
         reddit_client_id=os.environ["REDDIT_CLIENT_ID"],
         reddit_client_secret=os.environ["REDDIT_CLIENT_SECRET"],
     )
-    POE_API_KEY = os.environ["POE_API_KEY"]
-    app = make_app(bot, api_key=POE_API_KEY)
+    app = make_app(bot, access_key=os.environ["POE_ACCESS_KEY"])
     return app
