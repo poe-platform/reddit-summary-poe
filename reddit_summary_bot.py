@@ -8,9 +8,6 @@ from fastapi_poe.types import QueryRequest
 from langchain.document_loaders import RedditPostsLoader
 from sse_starlette.sse import ServerSentEvent
 
-REDDIT_CLIENT_ID = "REDACTED_CLIENT_ID"
-REDDIT_CLIENT_SECRET = "REDACTED_CLIENT_SECRET"
-
 PROMPT_TEMPLATE = """
 You are given posts from Subreddit {subreddit}.
 Write a summary for the theme of the subreddit from the posts."""
